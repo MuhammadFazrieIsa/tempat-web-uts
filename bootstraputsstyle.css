@@ -24,6 +24,7 @@
     /* Fade-in effect for paragraphs */
     .container p {
         color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         opacity: 0;
         animation: fadeIn 1s ease-out forwards;
         animation-delay: 1s;
@@ -31,6 +32,7 @@
 
     .container h3 {
         color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         opacity: 0;
         animation: fadeIn 1s ease-out forwards;
         animation-delay: 1s;
@@ -38,6 +40,7 @@
 
     .container label {
         color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         opacity: 0;
         animation: fadeIn 1s ease-out forwards;
         animation-delay: 1s;
