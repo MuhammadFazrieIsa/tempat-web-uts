@@ -76,7 +76,7 @@
     <div class="row">
       <div class="col-sm-5">
         <div class="image-container">
-          <img src="galeripilkada/1.jpg" class="img-fluid" >
+          <img src="galeripilkada/1.jpg" class="img-fluid" onclick="onClick(this)">
           <div class="image-text">Pasangan bakal calon Gubernur dan Wakil Gubernur Jawa Tengah 
             pasangan Andika Perkasa (kiri)-Hendrar Prihadi saat tiba untuk mendaftarkan diri di Kantor 
             Komisi Pemilihan Umum (KPU) Provinsi Jawa Tengah, Kota Semarang, Selasa (27/8/2024).</div>
@@ -84,7 +84,7 @@
       </div>
       <div class="col-sm-5">
         <div class="image-container">
-          <img src="galeripilkada/2.jpg" class="img-fluid">
+          <img src="galeripilkada/2.jpg" class="img-fluid onclick="onClick(this)">
           <div class="image-text">Bakal calon gubernur dan wakil gubernur DKI Jakarta Dharma Pongrekun dan 
             Kun Wardana melakukan konferensi pers seusai mendaftarkan diri untuk Pilkada 2024 di KPU DKI Jakarta, Kamis (29/8/2024). 
             Bakal calon gubernur dan wakil gubernur DKI Jakarta dari jalur independen mendaftarkan diri untuk bertarung di Pilakada DKI Jakarta 2024. 
@@ -93,7 +93,7 @@
       </div>
       <div class="col-sm-5">
         <div class="image-container">
-          <img src="galeripilkada/3.jpg" class="img-fluid">
+          <img src="galeripilkada/3.jpg" class="img-fluid" onclick="onClick(this)>
           <div class="image-text">Pasangan Calon Gubernur dan Wakil Gubernur 
             Tri Rismaharini dan Zahrul Azhar Asumta mendaftarkan diri ke kantor 
             KPU Jawa Timur, Surabaya, Kamis (29/8/2024). 
@@ -104,7 +104,7 @@
       </div>
       <div class="col-sm-5">
         <div class="image-container">
-          <img src="galeripilkada/4.jpg" class="img-fluid">
+          <img src="galeripilkada/4.jpg" class="img-fluid" onclick="onClick(this)>
           <div class="image-text">Komisioner Komisi Pemilihan Umum RI Idham Kholik (tengah) didampingi 
             Ketua KPU DKI Jakarta Wahyu Dinata (kiri) berkeliling melihat kesiapan 
             Kantor Komisi Pemilihan Umum Provinsi DKI Jakarta, Jakarta, untuk 
@@ -114,5 +114,12 @@
     </div>
   </div>        
 
+<script>
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+}
+</script>
+  
   </body>
 </html>
