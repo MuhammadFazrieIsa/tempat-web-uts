@@ -1,0 +1,118 @@
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      color: white;
+
+      /* Background image with overlay */
+      background: 
+        linear-gradient(rgba(26, 26, 26, 0.9), rgba(26, 26, 26, 0.9)),  /* Black overlay with 50% opacity */
+        url('background_pemilu2.jpg');                   /* Your image URL here */
+      background-size: cover;
+      background-position: center;
+      image-resolution: 1080;
+      fill-opacity: initial;
+    }
+
+    /* Fade-in and slide-up effect for header */
+    .bg-danger {
+        opacity: 0;
+        transform: translateY(50px);
+        animation: fadeInUp 1s ease-out forwards 0.5s;
+    }
+
+    /* Fade-in effect for paragraphs */
+    .container p {
+        color: white;
+        opacity: 0;
+        animation: fadeIn 1s ease-out forwards;
+        animation-delay: 1s;
+    }
+
+    .container h3 {
+        color: white;
+        opacity: 0;
+        animation: fadeIn 1s ease-out forwards;
+        animation-delay: 1s;
+    }
+
+    .container label {
+        color: white;
+        opacity: 0;
+        animation: fadeIn 1s ease-out forwards;
+        animation-delay: 1s;
+    }
+
+    .col-sm-6 {
+        opacity: 0;
+        animation: fadeIn 1s ease-out forwards;
+        animation-delay: 1s;
+    }
+
+        /* Fade-in animation */
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Slide-up and fade-in animation */
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .breadcrumb {
+                font-size: 12px; /* Adjust the font size for small screens */
+            }
+  
+            .container-fluid p {
+                font-size: 16px; /* Make text larger for better readability on mobile */
+            }
+  
+            .bg-danger {
+                font-size: 18px; /* Adjust header font size */
+            }
+  
+            .col-sm-6 {
+                margin-bottom: 20px; /* Add spacing between columns for mobile */
+            }
+  
+            /* Stack the breadcrumb items vertically on small screens */
+            .breadcrumb {
+                padding-left: 0;
+                list-style: none;
+            }
+  
+            .breadcrumb-item {
+                display: inline-block;
+                font-size: 12px;
+            }
+  
+            /* Adjust container width on small devices */
+            .container {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .image-text {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+                color: white;
+                font-size: 5px;
+                text-align: center;
+                padding: 5px 0;
+                display: none; /* Hide text by default */
+              }
+        }
+
+
+        table {
+            font-size: 12px; /* Adjust the font size for small screens */
+        }

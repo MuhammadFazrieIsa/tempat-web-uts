@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='icon_pemilu.png' rel='shortcut icon'>
+    <link rel="stylesheet" href="bootstraputsstyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <title>praktikumbootstrap-register</title>
+  </head>
+
+  <ul class="breadcrumb bg-gray mb-0">
+    <ul class="title text-secondary col-sm-2"><b>fazrie-production</b></ul>
+    <li class="breadcrumb-item text-secondary"><a href="index.html" class="text-danger">Beranda</a></li>
+    <li class="breadcrumb-item text-secondary"><a href="bootstraputs2.html" class="text-danger">Tentang</a></li>
+    <li class="breadcrumb-item text-secondary"><a href="https://kompaspedia.kompas.id/baca/paparan-topik/pilkada-serentak-2024-alur-data-dan-tren-sosial-politik" class="text-danger">Berita</a></li>
+    <li class="breadcrumb-item active text-black">Register</li>
+    <li class="breadcrumb-item text-danger" data-toggle="dropdown"><a href="bootstraputs4.html" class="text-danger">Galeri</a></li>
+  </ul>
+
+  <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-black" id="successModalLabel">Pesan Pengiriman</h5>
+        </div>
+        <div class="modal-body">
+          Anda sudah Register!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid p-3 bg-danger text-white text-center mb-0">
+    <h1>Register</h1>
+    <p>Silahkan Untuk Register!</p>
+  </div>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-sm-6">
+        <form>
+          <div class="form-group">
+            <label for="usr1">Nama Awal:</label>
+            <input type="text" class="form-control" placeholder="Masukan Nama Awal" id="usr1">
+          </div>
+          <div class="form-group">
+            <label for="usr2">Nama Akhir:</label>
+            <input type="text" class="form-control" placeholder="Masukan Nama Akhir" id="usr2">
+          </div>
+          <div class="form-group">
+            <label for="usr3">Email:</label>
+            <input type="text" class="form-control" placeholder="Masukan Email" id="usr3">
+          </div>
+          <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control bg-dark text-white" placeholder="Masukan Password" id="pwd">
+          </div>
+          <div class="form-group">
+            <label for="comment">Komentar:</label>
+            <textarea class="form-control" rows="5" placeholder="Masukan Komentar" id="comment"></textarea>
+          </div>
+          <div class="checkbox mb-3">
+            <label><input type="checkbox" name="remember"> Ingatkan Saya!</label>
+          </div>
+          <button type="button" class="btn btn-primary" onclick="showModal()" id="krm">Kirim</button>
+          <button type="reset" class="btn btn-danger" id="ulg">Ulangi</button>
+        </form>
+      </div>
+  
+      <div class="col-sm-6">
+        <h3 class="text-center">Contoh</h3>
+        <table class="table border table-hover bg-dark text-white">
+          <thead>
+            <tr>
+              <th>Nama Awal</th>
+              <th>Nama Akhir</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Default</td>
+              <td>Defaultson</td>
+              <td>def@somemail.com</td>
+            </tr>
+            <tr class="success">
+              <td>Success</td>
+              <td>Doe</td>
+              <td>john@example.com</td>
+            </tr>
+            <tr class="danger">
+              <td>Danger</td>
+              <td>Moe</td>
+              <td>mary@example.com</td>
+            </tr>
+            <tr class="info">
+              <td>Info</td>
+              <td>Dooley</td>
+              <td>july@example.com</td>
+            </tr>
+            <tr class="warning">
+              <td>Warning</td>
+              <td>Refs</td>
+              <td>bo@example.com</td>
+            </tr>
+            <tr class="active">
+              <td>Active</td>
+              <td>Activeson</td>
+              <td>act@example.com</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    function showModal() {
+        var myModal = new bootstrap.Modal(document.getElementById('successModal'));
+        myModal.show();
+    }
+  </script>
+
+  </body>
+</html>
